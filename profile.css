@@ -1,0 +1,135 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    padding: 32px;
+    gap: 16px;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+main section.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+.orders-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order-card {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-id {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.order-date {
+    font-size: 16px;
+    color: #757575;
+}
+
+.order-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order-detail-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order-items h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-total-label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.order-total-price {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.empty-orders {
+    text-align: center;
+    padding: 64px 32px;
+    color: #757575;
+    font-size: 18px;
+}
+
+.empty-orders p {
+    margin: 0 0 16px 0;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3645EA;
+    color: white;
+}

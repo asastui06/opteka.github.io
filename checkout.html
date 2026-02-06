@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Оформление заказа - Оптека</title>
+    <link href="global.css" rel="stylesheet">
+    <link href="checkout.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="components/opteka-header/element.js"></script>
+    <script type="module" src="components/opteka-footer/element.js"></script>
+    <script defer type="module" src="checkout.js"></script>
+</head>
+
+<body>
+    <opteka-header></opteka-header>
+    <main>
+        <section class="content-container">
+            <h1 class="page-title">Оформление заказа</h1>
+            
+            <form id="checkout-form" novalidate>
+                <div class="form-section">
+                    <label class="section-label">Данные получателя <span class="required">*</span></label>
+                    <div class="form-group">
+                        <input type="text" id="fullName" name="fullName" required placeholder="Введите Ваше ФИО">
+                        <span class="error-message">Пожалуйста, введите ФИО</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___ __ __">
+                        <span class="error-message">Пожалуйста, введите телефон</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                        <span class="error-message">Пожалуйста, введите корректный email</span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label class="section-label" for="address">Адрес доставки <span class="required">*</span></label>
+                    <div class="form-group">
+                        <input type="text" id="address" name="address" required placeholder="Введите ваш адрес">
+                        <span class="error-message">Пожалуйста, введите адрес доставки</span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label class="section-label">Способ оплаты</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="paymentMethod" value="online" checked>
+                            <span>Онлайн оплата</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="paymentMethod" value="cash">
+                            <span>Наличными при получении</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label class="section-label" for="comment">Комментарий к заказу</label>
+                    <div class="form-group">
+                        <textarea id="comment" name="comment" rows="4" placeholder="Дополнительная информация"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <a href="cart.html" class="btn btn-secondary">Вернуться в корзину</a>
+                    <button type="submit" class="btn btn-primary">Подтвердить заказ</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <opteka-footer></opteka-footer>
+</body>
+
+</html>

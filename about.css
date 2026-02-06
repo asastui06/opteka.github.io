@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    padding: 32px;
+    gap: 16px;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+main section.content-container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 32px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+main section.content-container p {
+    font-size: 40px;
+    line-height: 1.6;
+    margin: 0;
+}

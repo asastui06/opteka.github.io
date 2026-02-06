@@ -1,0 +1,38 @@
+.logo {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 32px;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    nav {
+        flex-grow: 1;
+        font-weight: 700;
+        font-size: 36px;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+
+            list-style-type: none;
+        }
+    }
+
+    .icon-buttons {
+        display: flex;
+        gap: 22px;
+    }
+}

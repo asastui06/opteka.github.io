@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог - Оптека</title>
+    <link href="global.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="components/opteka-header/element.js"></script>
+    <script type="module" src="components/opteka-footer/element.js"></script>
+
+    <script defer type="module" src="index.js"></script>
+
+</head>
+
+<body>
+    <opteka-header></opteka-header>
+    <main>
+        <section class="categories-and-filters">
+            <b>Категории</b>
+            <ul>
+                <li><a href="">Все товары</a></li>
+                <li><a href="">Лекарства</a></li>
+                <li><a href="">БАД</a></li>
+                <li><a href="">Гигиена</a></li>
+                <li><a href="">Предохранение и беременность</a></li>
+            </ul>
+
+            <b>Фильтры</b>
+            <form>
+                <label for="search">Поиск</label>
+                <br>
+                <input type="text" id="search" placeholder="Введите название">
+                <br>
+                <label for="sort">Сортировка</label>
+                <br>
+                <select name="sort" id="sort">
+                    <option value="default">По умолчанию</option>
+                </select>
+            </form>
+        </section>
+        <section class="products-container">
+        </section>
+    </main>
+    <opteka-footer></opteka-footer>
+</body>
+
+</html>

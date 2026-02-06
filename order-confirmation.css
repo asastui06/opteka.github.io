@@ -1,0 +1,69 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    padding: 32px;
+    gap: 16px;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    width: 100%;
+    text-align: center;
+    color: #22c55e;
+}
+
+main section.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #eee;
+    text-align: center;
+}
+
+.confirmation-message {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.confirmation-message p {
+    margin: 0 0 16px 0;
+}
+
+.order-id {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.order-id span {
+    color: #3645EA;
+}
+
+.actions {
+    margin-top: 24px;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #3645EA;
+    color: white;
+}
